@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
-source ./.mtalias
-source ./.mtenv
+export MT="${0:a:h}"
 
+cd $HOME
+
+# emtpy
+source "$MT/.mtalias"
+source $MT/.mtenv
+
+# pyenv
+eval "$(pyenv init --path)"
+
+# fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
