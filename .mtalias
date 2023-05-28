@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+# exa
 alias ls='exa -l --icons'
 alias la='exa --time-style=default --git --color-scale --icons --sort=type --group-directories-first -lhaS'
 alias ll='exa -lbGFa --git --sort=type --icons --group-directories-first'

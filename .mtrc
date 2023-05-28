@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source $MTZSH/.mtalias
-source $MTZSH/.mtenv
+source ./.mtalias
+source ./.mtenv
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
