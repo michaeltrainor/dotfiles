@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# exa
+export EXA_ICON_SPACING=2
+
+# python
+export PATH="$PATH:/Users/michaeltrainor/Library/Python/3.11/bin"
