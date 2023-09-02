@@ -1,0 +1,60 @@
+env:
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  TERM: xterm-256color
+
+window:
+  # Spread additional padding evenly around the terminal content.
+  padding:
+    x: 10
+    y: 10
+  decorations: full
+  startup_mode: Windowed
+  dimensions:
+    columns: 192
+    lines: 64
+
+cursor:
+  style: Block
+
+font:
+  normal:
+    family: Inconsolata Nerd Font
+  size: 16
+
+import:
+  # - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+  # - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
+  # - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
+
+# # Colors (One Dark)
+# colors:
+#   # Default colors
+#   primary:
+#     background: "#1e2127"
+#     foreground: "#abb2bf"
+
+#   # Normal colors
+#   normal:
+#     black: "#5c6370"
+#     red: "#e06c75"
+#     green: "#98c379"
+#     yellow: "#e5c07b"
+#     blue: "#61afef"
+#     magenta: "#c678dd"
+#     cyan: "#56b6c2"
+#     white: "#abb2bf"
+
+#   # Bright colors
+#   bright:
+#     black: "#5c6370"
+#     red: "#e06c75"
+#     green: "#98c379"
+#     yellow: "#e5c07b"
+#     blue: "#61afef"
+#     magenta: "#c678dd"
+#     cyan: "#56b6c2"
+#     white: "#ffffff"
