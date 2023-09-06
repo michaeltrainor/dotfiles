@@ -1,0 +1,19 @@
+SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+
+# zsh
+ln -sfn $SCRIPTPATH/.zshrc ~/.zshrc
+source ~/.zshrc
+
+# homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew update
+
+# git
+brew install git
+ln -sfn $SCRIPTPATH/.zshrc ~/.zshrc
+
+# alacritty
+brew install alacritty
+ln -sfn $SCRIPTPATH/.config/alacritty ~/.config/alacritty
+
+# rust-lang
