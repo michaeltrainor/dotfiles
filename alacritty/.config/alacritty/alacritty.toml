@@ -1,0 +1,30 @@
+import = [
+    "~/.config/alacritty/nord.toml"
+]
+
+[shell]
+program = "ubuntu"
+
+[env]
+TERM = "xterm-256color"
+
+[window]
+opacity = 0.9
+
+[window.padding]
+x = 10
+y = 10
+
+[window.dimensions]
+columns = 160
+lines = 64
+
+[cursor.style]
+shape = "Block"
+blinking = "On"
+
+[font]
+size = 12
+
+[font.normal]
+family = "FiraCode Nerd Font"
