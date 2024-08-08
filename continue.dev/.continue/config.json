@@ -1,0 +1,18 @@
+{
+  "models": [
+    {
+      "model": "claude-3-5-sonnet-20240620",
+      "contextLength": 200000,
+      "title": "Claude 3.5 Sonnet",
+      "apiKey": "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",
+      "provider": "anthropic"
+    }
+  ],
+  "tabAutocompleteModel": {
+    "title": "Ollama WSL",
+    "model": "llama3.1",
+    "apiBase": "http://localhost:11434",
+    "provider": "ollama"
+  },
+  "docs": []
+}
