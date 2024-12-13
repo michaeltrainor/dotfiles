@@ -1,15 +1,5 @@
-import = [
-    "~/.config/alacritty/nord.toml"
-]
-
-[shell]
-program = "ubuntu"
-
 [env]
 TERM = "xterm-256color"
-
-[window]
-opacity = 0.9
 
 [window.padding]
 x = 10
@@ -24,7 +14,14 @@ shape = "Block"
 blinking = "On"
 
 [font]
-size = 12
+size = 14
 
 [font.normal]
 family = "FiraCode Nerd Font"
+
+[general]
+import = [
+    "~/.config/alacritty/gruvbox.toml"
+]
+
+[terminal]
