@@ -7,22 +7,79 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "features": {
-    "inline_completion_provider": "none"
-  },
   "assistant": {
     "default_model": {
       "provider": "ollama",
-      "model": "qwen2.5-coder:14b"
+      "model": "phi4:latest"
     },
     "version": "2"
   },
   "ui_font_size": 16,
+  "buffer_font_family": "FiraCode Nerd Font Mono",
+  "buffer_font_size": 14,
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Gruvbox Dark Hard"
+    "dark": "Gruvbox Material"
   },
-  "buffer_font_family": "FiraCode Nerd Font",
-  "buffer_font_size": 14
+  "cursor_shape": "block",
+  "tabs": {
+    "git_status": true,
+    "file_icons": true
+  },
+  "git": {
+    "git_gutter": "tracked_files",
+    "inline_blame": {
+      "enabled": true
+    }
+  },
+  "languages": {
+    "Python": {
+      "indent_guides": {
+        "enabled": true
+      }
+    },
+    "C": {
+      "format_on_save": "off",
+      "preferred_line_length": 64,
+      "soft_wrap": "preferred_line_length"
+    },
+    "JSON": {
+      "tab_size": 4
+    }
+  },
+  "terminal": {
+    "alternate_scroll": "off",
+    "blinking": "terminal_controlled",
+    "copy_on_select": false,
+    "dock": "right",
+    "detect_venv": {
+      "on": {
+        "directories": [".env", "env", ".venv", "venv"],
+        "activate_script": "default"
+      }
+    },
+    "env": {},
+    "font_family": "FiraCode Nerd Font Mono",
+    "font_size": 14,
+    "line_height": "comfortable",
+    "option_as_meta": false,
+    "button": true,
+    "toolbar": {
+      "breadcrumbs": true
+    },
+    "working_directory": "current_project_directory"
+  },
+  "features": {
+    "copilot": false,
+    "inline_completion_provider": "zed"
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "git_panel": {
+    "button": true,
+    "dock": "right",
+    "status_style": "icon"
+  }
 }
