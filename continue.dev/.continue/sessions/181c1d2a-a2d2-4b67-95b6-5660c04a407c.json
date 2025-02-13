@@ -1,0 +1,59 @@
+{
+  "sessionId": "181c1d2a-a2d2-4b67-95b6-5660c04a407c",
+  "title": "Assistance Inquiry Chat  \nHelpful Information Request  \nGeneral Assistance",
+  "workspaceDirectory": "",
+  "history": [
+    {
+      "message": {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "Hi there"
+          }
+        ],
+        "id": "0d55e0ae-3296-4b15-afa7-e21ef9528e39"
+      },
+      "contextItems": [],
+      "editorState": {
+        "type": "doc",
+        "content": [
+          {
+            "type": "paragraph",
+            "content": [
+              {
+                "type": "text",
+                "text": "Hi there"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "message": {
+        "id": "c6e3fecc-dc4f-40b1-b802-e3078a9bd04e",
+        "role": "assistant",
+        "content": "Hello! How can I assist you today? If you have any questions or need information, feel free to ask."
+      },
+      "contextItems": [],
+      "promptLogs": [
+        {
+          "modelTitle": "Ollama",
+          "prompt": "<user>\nHi there\n\n",
+          "completion": "Hello! How can I assist you today? If you have any questions or need information, feel free to ask.",
+          "completionOptions": {
+            "model": "phi4",
+            "maxTokens": 4096,
+            "stop": [
+              "<|im_start|>",
+              "<|im_end|>",
+              "<|im_sep|>"
+            ]
+          }
+        }
+      ],
+      "isGatheringContext": false
+    }
+  ]
+}

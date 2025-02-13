@@ -29,3 +29,13 @@ alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 
 # zed
 export EDITOR=zed
+
+# tmux
+export TMUX_SHELL=0
+
+if [[ -n "$TMUX_SHELL" && "$TMUX_SHELL" -eq 0 ]]; then
+    if [[ $- == *i* ]] && command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+        tmux attach-session -t default || tmux new-session -s default
+    fi
+fi
+

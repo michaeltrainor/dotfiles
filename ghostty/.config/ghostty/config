@@ -1,6 +1,6 @@
 # fonts
 font-family = "FiraCode Nerd Font Mono"
-font-size = 14
+font-size = 16
 
 # theme
 theme = GruvboxDarkHard
@@ -10,7 +10,8 @@ shell-integration = zsh
 shell-integration-features = true
 
 # cursor
-cursor-style = "block_hollow"
+cursor-style = "bar"
+cursor-style-blink = true
 cursor-opacity = 0.75
 
 # window
