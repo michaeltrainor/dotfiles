@@ -30,6 +30,11 @@ alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 # zed
 export EDITOR=zed
 
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+
 # tmux
 export TMUX_SHELL=0
 

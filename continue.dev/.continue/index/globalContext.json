@@ -3,7 +3,8 @@
     "": "local",
     "/Users/michaeltrainor/projects/local/python/hello": "local",
     "file:///Users/michaeltrainor/projects/local/python/hello": "local",
-    "file:///Users/michaeltrainor/projects/local/c/hello": "local"
+    "file:///Users/michaeltrainor/projects/local/c/hello": "local",
+    "file:///Users/michaeltrainor/projects/unity/Hello": "local"
   },
   "selectedTabAutocompleteModel": "Ollama WSL"
 }

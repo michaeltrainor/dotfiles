@@ -14,24 +14,27 @@
     },
     "version": "2"
   },
-  "ui_font_size": 16,
   "buffer_font_family": "FiraCode Nerd Font Mono",
   "buffer_font_size": 16,
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Gruvbox Material"
+  "collaboration_panel": {
+    "button": false
   },
   "cursor_shape": "bar",
-  "tabs": {
-    "git_status": true,
-    "file_icons": true
+  "features": {
+    "copilot": false,
+    "inline_completion_provider": "zed"
   },
+  "formatter": "language_server",
   "git": {
     "git_gutter": "tracked_files",
     "inline_blame": {
       "enabled": true
     }
+  },
+  "git_panel": {
+    "button": true,
+    "dock": "right",
+    "status_style": "icon"
   },
   "languages": {
     "Python": {
@@ -48,21 +51,30 @@
       "tab_size": 4
     }
   },
+  "tabs": {
+    "git_status": true,
+    "file_icons": true
+  },
   "terminal": {
     "alternate_scroll": "off",
     "blinking": "terminal_controlled",
     "copy_on_select": false,
-    "dock": "right",
+    "dock": "bottom",
     "detect_venv": {
       "on": {
-        "directories": [".env", "env", ".venv", "venv"],
+        "directories": [
+          ".env",
+          "env",
+          ".venv",
+          "venv"
+        ],
         "activate_script": "default"
       }
     },
     "env": {},
     "font_family": "FiraCode Nerd Font Mono",
     "font_size": 14,
-    "line_height": "comfortable",
+    "line_height": "standard",
     "option_as_meta": false,
     "button": true,
     "toolbar": {
@@ -70,16 +82,10 @@
     },
     "working_directory": "current_project_directory"
   },
-  "features": {
-    "copilot": false,
-    "inline_completion_provider": "zed"
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "0x96f Theme"
   },
-  "collaboration_panel": {
-    "button": false
-  },
-  "git_panel": {
-    "button": true,
-    "dock": "right",
-    "status_style": "icon"
-  }
+  "ui_font_size": 16
 }
