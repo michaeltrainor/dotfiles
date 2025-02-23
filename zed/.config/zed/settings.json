@@ -9,8 +9,8 @@
 {
   "assistant": {
     "default_model": {
-      "provider": "ollama",
-      "model": "phi4:latest"
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
     },
     "version": "2"
   },
@@ -21,8 +21,7 @@
   },
   "cursor_shape": "bar",
   "features": {
-    "copilot": false,
-    "inline_completion_provider": "zed"
+    "copilot": true
   },
   "formatter": "language_server",
   "git": {
@@ -43,8 +42,8 @@
       }
     },
     "C": {
-      "format_on_save": "off",
-      "preferred_line_length": 64,
+      "format_on_save": "on",
+      "preferred_line_length": 80,
       "soft_wrap": "preferred_line_length"
     },
     "JSON": {
@@ -59,7 +58,7 @@
     "alternate_scroll": "off",
     "blinking": "terminal_controlled",
     "copy_on_select": false,
-    "dock": "bottom",
+    "dock": "right",
     "detect_venv": {
       "on": {
         "directories": [

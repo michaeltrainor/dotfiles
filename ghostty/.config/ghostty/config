@@ -1,6 +1,6 @@
 # fonts
 font-family = "FiraCode Nerd Font Mono"
-font-size = 16
+font-size = 14
 
 # theme
 theme = GruvboxDarkHard

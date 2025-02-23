@@ -34,13 +34,3 @@ export EDITOR=zed
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
-
-# tmux
-export TMUX_SHELL=0
-
-if [[ -n "$TMUX_SHELL" && "$TMUX_SHELL" -eq 0 ]]; then
-    if [[ $- == *i* ]] && command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-        tmux attach-session -t default || tmux new-session -s default
-    fi
-fi
-

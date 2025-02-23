@@ -28,5 +28,11 @@
     "title": "Assistance Inquiry Chat  \nHelpful Information Request  \nGeneral Assistance",
     "dateCreated": "1739333590191",
     "workspaceDirectory": ""
+  },
+  {
+    "sessionId": "f88d18e1-f00a-4ac9-a0a6-6fe5199ad9af",
+    "title": "General Assistance Inquiry  \nSupport Query Introduction  \nHelpful Information Request",
+    "dateCreated": "1739681949073",
+    "workspaceDirectory": "file:///Users/michaeltrainor/projects/local/c/hello"
   }
 ]
