@@ -1,6 +1,6 @@
 # fonts
 font-family = "FiraCode Nerd Font Mono"
-font-size = 14
+font-size = 16
 
 # theme
 theme = GruvboxDarkHard
@@ -12,11 +12,11 @@ shell-integration-features = true
 # cursor
 cursor-style = "bar"
 cursor-style-blink = true
-cursor-opacity = 0.75
+cursor-opacity = 1
 
 # window
 macos-titlebar-style = tabs
-background-opacity = 0.85
-background-blur-radius = 20
-window-padding-x = 10
-window-padding-y = 10
+background-opacity = 0.9
+background-blur-radius = 80
+window-padding-x = 20, 20
+window-padding-y = 20, 10
