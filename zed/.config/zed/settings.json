@@ -9,8 +9,8 @@
 {
   "assistant": {
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-latest"
+      "provider": "ollama",
+      "model": "deepseek-r1:32b"
     },
     "version": "2"
   },
@@ -21,6 +21,7 @@
   },
   "cursor_shape": "bar",
   "features": {
+    "edit_prediction_provider": "zed",
     "copilot": true
   },
   "formatter": "language_server",
