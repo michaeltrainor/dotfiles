@@ -10,9 +10,8 @@ shell-integration = zsh
 shell-integration-features = true
 
 # cursor
-cursor-style = "bar"
+cursor-style = "block"
 cursor-style-blink = true
-cursor-opacity = 1
 
 # window
 macos-titlebar-style = tabs
@@ -20,3 +19,5 @@ background-opacity = 0.9
 background-blur-radius = 80
 window-padding-x = 20, 20
 window-padding-y = 20, 10
+window-width = 90
+window-height = 55
