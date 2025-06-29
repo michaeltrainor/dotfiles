@@ -67,3 +67,11 @@ eval "$(pyenv init - zsh)"
 export PATH="$PATH:/Users/michaeltrainor/.lmstudio/bin"
 # End of LM Studio CLI section
 
+# ============================
+# Terminal Title
+# ============================
+case $TERM in
+    xterm*|iTerm.app*)
+        preexec () { print -Pn "\e]1;%n@%m: $1\a" }
+        precmd ()  { print -Pn "\e]1;%n@%m: %~\a" }
+esac
