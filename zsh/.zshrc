@@ -1,6 +1,7 @@
 # ============================
 # ZSH Configuration
 # ============================
+setopt autocd cdablevars extendedglob
 
 # Install Zinit if not already installed
 if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
