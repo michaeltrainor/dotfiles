@@ -52,6 +52,7 @@ alias llx='ls -l -a'
 alias la='ls -A'
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
 alias docker='podman'
+alias finder='open .'
 
 # ============================
 # Editor Configuration
