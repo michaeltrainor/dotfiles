@@ -67,3 +67,8 @@ eval "$(pyenv init - zsh)"
 export PATH="$PATH:/Users/michaeltrainor/.lmstudio/bin"
 # End of LM Studio CLI section
 
+
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=10000
+SAVEHIST=$HISTSIZE
+setopt inc_append_history share_history hist_ignore_dups hist_reduce_blanks
