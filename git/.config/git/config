@@ -3,3 +3,5 @@
 	email = accounts@michaeltrainor.com
 [column]
 	ui = auto
+[init]
+	defaultBranch = main

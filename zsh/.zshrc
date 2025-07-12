@@ -19,6 +19,11 @@ autoload -Uz _zinit
 autoload -Uz compinit
 compinit
 
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=10000
+SAVEHIST=$HISTSIZE
+setopt inc_append_history share_history hist_ignore_dups hist_reduce_blanks
+
 # ============================
 # Plugins
 # ============================
@@ -44,6 +49,12 @@ export STARSHIP_CACHE=~/.starship/cache
 eval "$(starship init zsh)"
 
 # ============================
+# eza
+# ============================
+unset EZA_COLORS LS_COLORS
+export EZA_CONFIG_DIR="$HOME/.config/eza"
+
+# ============================
 # Aliases
 # ============================
 alias ls='eza --git'
@@ -51,8 +62,8 @@ alias ll='ls -l -a -X'
 alias llx='ls -l -a'
 alias la='ls -A'
 alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
-alias docker='podman'
 alias finder='open .'
+alias kubectl="minikube kubectl --"
 
 # ============================
 # Editor Configuration
@@ -66,12 +77,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
 
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/michaeltrainor/.lmstudio/bin"
-# End of LM Studio CLI section
-
-
-HISTFILE=$HOME/.zsh_history
-HISTSIZE=10000
-SAVEHIST=$HISTSIZE
-setopt inc_append_history share_history hist_ignore_dups hist_reduce_blanks
+# ============================
+# nvm - Node Version Manager
+# ============================
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

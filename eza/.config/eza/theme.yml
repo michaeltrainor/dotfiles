@@ -1,0 +1,130 @@
+filekinds:
+  directory:
+    foreground: "#78dce8"
+    is_bold: true
+  symlink:
+    foreground: "#ab9df2"
+    is_italic: true
+  executable:
+    foreground: "#a9dc76"
+    is_bold: true
+  special:
+    foreground: "#ff6188"
+  socket:
+    foreground: "#ffd866"
+  pipe:
+    foreground: "#fc9867"
+  block-device:
+    foreground: "#ab9df2"
+  character-device:
+    foreground: "#ab9df2"
+
+extensions:
+  "md":
+    filename:
+      foreground: "#78dce8"
+    icon:
+      glyph: ""
+      foreground: "#ffd866"
+  "py":
+    filename:
+      foreground: "#ff6188"
+    icon:
+      glyph: ""
+      foreground: "#ffd866"
+  "js":
+    filename:
+      foreground: "#fc9867"
+    icon:
+      glyph: ""
+      foreground: "#ffd866"
+  "json":
+    filename:
+      foreground: "#fcfcfa"
+    icon:
+      glyph: ""
+      foreground: "#ffd866"
+  "png":
+    filename:
+      foreground: "#ffd866"
+    icon:
+      glyph: ""
+      foreground: "#ffd866"
+  "jpg":
+    filename:
+      foreground: "#ffd866"
+    icon:
+      glyph: ""
+      foreground: "#ffd866"
+  "html":
+    filename:
+      foreground: "#fc9867"
+    icon:
+      glyph: ""
+      foreground: "#ffd866"
+
+perms:
+  read:
+    foreground: "#a9dc76"
+  write:
+    foreground: "#fc9867"
+  exec:
+    foreground: "#78dce8"
+  exec-sticky:
+    foreground: "#ff6188"
+    is_bold: true
+  no-access:
+    foreground: "#727072"
+
+size:
+  none:
+    foreground: "#fcfcfa"
+  small:
+    foreground: "#a9dc76"
+  medium:
+    foreground: "#ffd866"
+  large:
+    foreground: "#ff6188"
+
+users:
+  user:
+    foreground: "#fcfcfa"
+  group:
+    foreground: "#727072"
+
+date:
+  hour-old:
+    foreground: "#a9dc76"
+  day-old:
+    foreground: "#ffd866"
+  older:
+    foreground: "#727072"
+
+git:
+  new:
+    foreground: "#a9dc76"
+  modified:
+    foreground: "#ffd866"
+  deleted:
+    foreground: "#ff6188"
+  renamed:
+    foreground: "#78dce8"
+  typechange:
+    foreground: "#ab9df2"
+  conflict:
+    foreground: "#ff6188"
+    is_bold: true
+  ignored:
+    foreground: "#727072"
+
+links:
+  valid:
+    foreground: "#ab9df2"
+  invalid:
+    foreground: "#ff6188"
+
+inode:
+  foreground: "#727072"
+
+tree-edge:
+  foreground: "#727072"
