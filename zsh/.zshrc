@@ -25,7 +25,7 @@ SAVEHIST=$HISTSIZE
 setopt inc_append_history share_history hist_ignore_dups hist_reduce_blanks
 
 # ============================
-# Plugins
+# Zinit Plugins
 # ============================
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma-continuum/fast-syntax-highlighting
@@ -55,22 +55,6 @@ unset EZA_COLORS LS_COLORS
 export EZA_CONFIG_DIR="$HOME/.config/eza"
 
 # ============================
-# Aliases
-# ============================
-alias ls='eza --git'
-alias ll='ls -l -a -X'
-alias llx='ls -l -a'
-alias la='ls -A'
-alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
-alias finder='open .'
-alias kubectl="minikube kubectl --"
-
-# ============================
-# Editor Configuration
-# ============================
-export EDITOR=nvim
-
-# ============================
 # Pyenv (Python Version Manager)
 # ============================
 export PYENV_ROOT="$HOME/.pyenv"
@@ -83,3 +67,35 @@ eval "$(pyenv init - zsh)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# ============================
+# dotnet
+# ============================
+export DOTNET_ROOT="/opt/homebrew/opt/dotnet/libexec"
+
+# ============================
+# go
+# ============================
+export PATH=$PATH:$(go env GOPATH)/bin
+
+# ============================
+# Aliases
+# ============================
+alias ls='eza --git'
+alias ll='ls -l -a -X'
+alias llx='ls -l -a'
+alias la='ls -A'
+alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
+alias finder='open .'
+
+# ============================
+# Editor Configuration
+# ============================
+export EDITOR=nvim
+
+# ============================
+# docker
+# ============================
+fpath=(/Users/mtd3v/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
