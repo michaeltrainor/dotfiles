@@ -99,3 +99,8 @@ export EDITOR=nvim
 fpath=(/Users/mtd3v/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
+
+# ============================
+# ollama
+# ============================
+export OLLAMA_HOST=192.168.50.136
