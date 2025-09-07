@@ -20,7 +20,6 @@ $kotlin\
 $haskell\
 $python\
 [](fg:overlay1)\
-$time\
 $line_break$character"""
 
 palette = 'catppuccin_mocha'
@@ -97,88 +96,88 @@ truncate_to_repo = false
 
 [directory.substitutions]
 "Documents" = "󰈙 "
-"Downloads" = " "
+"Downloads" = "󰇥 "
 "Music" = "󰝚 "
-"Pictures" = " "
+"Pictures" = "󰋩 "
 "Developer" = "󰲋 "
 
 [git_branch]
-symbol = ""
-style = "bg:surface0"
-format = '[[ $symbol $branch ](fg:rosewater bg:surface0)]($style)'
+symbol = ""
+style = "bg:surface1"
+format = ' [](fg:surface1)[$symbol $branch](fg:blue bg:surface1)'
 
 [git_status]
-style = "bg:surface0"
-format = '[[($all_status$ahead_behind )](fg:rosewater bg:surface0)]($style)'
+style = "bg:surface1"
+format = '[$all_status$ahead_behind](fg:text bg:surface1)[](fg:surface1) '
 
 [nodejs]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:surface0 bg:blue)]($style)'
+symbol = "🟢"
+style = "bg:surface0"
+format = '[](fg:surface0)[ $symbol( $version) ](fg:blue bg:surface0)[](fg:surface0)'
 
 [c]
-symbol = " "
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:surface0 bg:blue)]($style)'
+symbol = "⚙️"
+style = "bg:surface0"
+format = '[](fg:surface0)[ $symbol( $version) ](fg:blue bg:surface0)[](fg:surface0)'
 
 [rust]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:peach bg:surface0)]($style)'
+symbol = "🦀"
+style = "bg:surface0"
+format = '[](fg:surface0)[ $symbol( $version) ](fg:peach bg:surface0)[](fg:surface0)'
 
 [golang]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:surface0 bg:blue)]($style)'
+symbol = "🤖"
+style = "bg:surface0"
+format = '[](fg:surface0)[ $symbol( $version) ](fg:blue bg:surface0)[](fg:surface0)'
 
 [php]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:surface0 bg:blue)]($style)'
+symbol = "🐘"
+style = "bg:surface0"
+format = '[](fg:surface0)[ $symbol( $version) ](fg:blue bg:surface0)[](fg:surface0)'
 
 [java]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:surface0 bg:blue)]($style)'
+symbol = "☕"
+style = "bg:surface0"
+format = '[](fg:surface0)[ $symbol( $version) ](fg:blue bg:surface0)[](fg:surface0)'
 
 [kotlin]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:surface0 bg:blue)]($style)'
+symbol = "🎯"
+style = "bg:surface0"
+format = '[](fg:surface0)[ $symbol( $version) ](fg:blue bg:surface0)[](fg:surface0)'
 
 [haskell]
-symbol = ""
-style = "bg:blue"
-format = '[[ $symbol( $version) ](fg:surface0 bg:blue)]($style)'
+symbol = "λ"
+style = "bg:surface0"
+format = '[](fg:surface0)[ $symbol( $version) ](fg:blue bg:surface0)[](fg:surface0)'
 
 [python]
-symbol = ""
+symbol = "🐍"
 style = "bg:surface0"
-format = '[[ $symbol( $version $virtualenv) ](fg:blue bg:surface0)]($style)'
+format = '[](fg:surface0)[$symbol( $version $virtualenv) ](fg:blue bg:surface0)[](fg:surface0)'
 
 [docker_context]
 symbol = ""
-style = "bg:color_bg3"
-format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
+style = "bg:surface2"
+format = '[[ $symbol( $context) ](fg:#83a598 bg:surface2)]($style)'
 
 [conda]
-style = "bg:color_bg3"
-format = '[[ $symbol( $environment) ](fg:#83a598 bg:color_bg3)]($style)'
+style = "bg:surface2"
+format = '[[ $symbol( $environment) ](fg:#83a598 bg:surface2)]($style)'
 
 [time]
 disabled = false
 time_format = "%R"
-style = "bg:color_bg1"
-format = '[[  $time ](fg:color_fg0 bg:surface0)]($style)'
+style = "bg:surface0"
+format = '[[  $time ](fg:text bg:surface0)]($style)'
 
 [line_break]
 disabled = false
 
 [character]
 disabled = false
-success_symbol = '[](bold fg:color_green)'
-error_symbol = '[](bold fg:color_red)'
-vimcmd_symbol = '[](bold fg:color_green)'
-vimcmd_replace_one_symbol = '[](bold fg:color_purple)'
-vimcmd_replace_symbol = '[](bold fg:color_purple)'
-vimcmd_visual_symbol = '[](bold fg:color_yellow)'
+success_symbol = '[❯](bold fg:green)'
+error_symbol = '[✖](bold fg:red)'
+vimcmd_symbol = '[❮](bold fg:green)'
+vimcmd_replace_one_symbol = '[❮](bold fg:mauve)'
+vimcmd_replace_symbol = '[❮❮](bold fg:mauve)'
+vimcmd_visual_symbol = '[❮](bold fg:yellow)'

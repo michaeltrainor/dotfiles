@@ -19,6 +19,6 @@ background-opacity = 0.9
 background-blur-radius = 80
 window-padding-x = 5, 5
 window-padding-y = 5, 5
-window-width = 98
-window-height = 65
+window-width = 140
+window-height = 70
 keybind = shift+enter=text:\n
