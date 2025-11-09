@@ -94,13 +94,8 @@ alias finder='open .'
 export EDITOR=nvim
 
 # ============================
-# docker
-# ============================
-fpath=(/Users/mtd3v/.docker/completions $fpath)
-autoload -Uz compinit
-compinit
-
-# ============================
 # ollama
 # ============================
-export OLLAMA_HOST=192.168.50.136
+# export OLLAMA_HOST=192.168.50.136
+
+. "$HOME/.local/bin/env"
