@@ -1,7 +1,313 @@
+# ============================
+# User Configuration
+# ============================
 [user]
 	name = Michael Trainor
 	email = accounts@michaeltrainor.com
-[column]
-	ui = auto
+
+# ============================
+# Core Settings
+# ============================
+[core]
+	# Faster operations with untracked files
+	untrackedCache = true
+	# Detect whitespace errors
+	whitespace = trailing-space,space-before-tab
+	# Use delta for better diffs (install: brew install git-delta)
+	pager = delta
+
 [init]
 	defaultBranch = main
+
+# ============================
+# Column UI
+# ============================
+[column]
+	ui = auto
+
+# ============================
+# Protocol & Performance
+# ============================
+[protocol]
+	# Use protocol v2 for faster operations
+	version = 2
+
+# ============================
+# Push Configuration
+# ============================
+[push]
+	# Push current branch to branch with same name
+	default = current
+	# Automatically create remote branch (Git 2.37+)
+	autoSetupRemote = true
+	# Push annotated tags with branches
+	followTags = true
+
+# ============================
+# Pull Configuration
+# ============================
+[pull]
+	# Only fast-forward on pull, preventing accidental merges
+	ff = only
+	# Alternative: uncomment to always rebase on pull
+	# rebase = true
+
+# ============================
+# Fetch Configuration
+# ============================
+[fetch]
+	# Automatically prune deleted remote branches
+	prune = true
+	# Verify objects on transfer
+	fsckobjects = true
+
+# ============================
+# Merge Configuration
+# ============================
+[merge]
+	# Best conflict resolution view (Git 2.35+)
+	# Shows: yours | base | theirs
+	conflictstyle = zdiff3
+	# Include commit summaries in merge commits
+	log = true
+	# Unlimited rename detection
+	renameLimit = 0
+
+# ============================
+# Rebase Configuration
+# ============================
+[rebase]
+	# Automatically arrange fixup! and squash! commits
+	autosquash = true
+	# Automatically stash/unstash before/after rebase
+	autostash = true
+	# Update stacked branches during rebase (Git 2.38+)
+	updateRefs = true
+
+# ============================
+# Rerere (Reuse Recorded Resolution)
+# ============================
+[rerere]
+	# Remember conflict resolutions
+	enabled = true
+	# Automatically stage resolved conflicts
+	autoupdate = true
+
+# ============================
+# Diff Configuration
+# ============================
+[diff]
+	# Best diff algorithm (recommended by Git core team)
+	algorithm = histogram
+	# Detect renames and copies
+	renames = copies
+	# Highlight moved code blocks
+	colorMoved = default
+	# Better submodule diffs
+	submodule = log
+
+# ============================
+# Delta Pager Configuration
+# ============================
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	# Enable navigation with n/N
+	navigate = true
+	# Color theme (options: Monokai Extended, base16, etc.)
+	syntax-theme = base16
+	# Show line numbers
+	line-numbers = false
+	# Enable hyperlinks for file paths
+	hyperlinks = true
+	# Side-by-side view (set to true for wide screens)
+	side-by-side = false
+
+# ============================
+# Color Configuration
+# ============================
+[color]
+	ui = auto
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+	newMoved = cyan dim
+	oldMoved = blue dim
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+# ============================
+# Branch Configuration
+# ============================
+[branch]
+	# Sort branches by most recent commit
+	sort = -committerdate
+	# Automatically setup tracking for new branches
+	autosetupmerge = true
+
+# ============================
+# Checkout Configuration
+# ============================
+[checkout]
+	# Default remote for checkout operations
+	defaultRemote = origin
+
+# ============================
+# Commit Configuration
+# ============================
+[commit]
+	# Show full diff in commit message editor
+	verbose = true
+
+# ============================
+# Log Configuration
+# ============================
+[log]
+	# Use human-readable date format
+	date = human
+
+# ============================
+# Stash Configuration
+# ============================
+[stash]
+	# Show diff when viewing stash
+	showPatch = true
+
+# ============================
+# Apply Configuration
+# ============================
+[apply]
+	# Automatically fix whitespace errors
+	whitespace = fix
+
+# ============================
+# Help Configuration
+# ============================
+[help]
+	# Immediately execute corrected typos
+	autocorrect = immediate
+
+# ============================
+# Transfer & Security
+# ============================
+[transfer]
+	# Verify objects on transfer
+	fsckobjects = true
+
+[receive]
+	# Verify objects when receiving
+	fsckObjects = true
+
+# ============================
+# Aliases - Status & Inspection
+# ============================
+[alias]
+	# Short status
+	s = status -s
+	st = status
+	
+	# Compact log
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	
+	# Detailed log with graph
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	
+	# Show recent branches
+	branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
+	
+	# Show tags sorted by version
+	tags = tag -l --sort=-version:refname
+
+# ============================
+# Aliases - Commit Operations
+# ============================
+	# Quick commit with message
+	c = commit -m
+	ca = commit -am
+	
+	# Amend last commit reusing message
+	amend = commit --amend --reuse-message=HEAD
+	
+	# Commit with verbose diff
+	ci = commit -v
+	
+	# Undo last commit, keeping changes
+	uncommit = reset --soft HEAD^
+	
+	# Show last committed change
+	last = diff HEAD^
+
+# ============================
+# Aliases - Branch & Checkout
+# ============================
+	# Checkout shortcuts
+	co = checkout
+	nb = checkout -b
+	
+	# Smart checkout: create if doesn't exist, checkout if exists
+	go = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+	
+	# Delete merged branches (excluding main/master)
+	dm = "!git branch --merged | grep -v '\\*\\|main\\|master' | xargs -n 1 git branch -d"
+
+# ============================
+# Aliases - Diff Operations
+# ============================
+	# Diff with stat
+	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+	
+	# Diff cached/staged changes
+	dc = diff --cached
+	
+	# Word-level diff
+	df = diff --color --color-words --abbrev
+	
+	# Diff last N commits
+	di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
+
+# ============================
+# Aliases - Advanced Workflow
+# ============================
+	# Unstage files
+	unstage = reset HEAD --
+	
+	# List all aliases
+	aliases = config --get-regexp alias
+	
+	# Show contributors
+	contributors = shortlog --summary --numbered
+	
+	# Show current user email
+	whoami = config user.email
+	
+	# Find commits by code content
+	fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
+	
+	# Find commits by message
+	fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
+
+# ============================
+# URL Shortcuts
+# ============================
+[url "git@github.com:"]
+	# Use SSH instead of HTTPS for GitHub
+	insteadOf = https://github.com/
+	# Shortcut: gh:user/repo
+	insteadOf = gh:
+
+[url "git://github.com/"]
+	# Shortcut: github:user/repo
+	insteadOf = github:
