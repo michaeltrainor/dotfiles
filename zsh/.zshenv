@@ -4,7 +4,7 @@ export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$HOME/.local/bin:$
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export PAGER=less
-export EDITOR="code --wait"
+export EDITOR="nvim"
 
 # Tools
 export BAT_THEME="TwoDark"

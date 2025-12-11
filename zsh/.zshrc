@@ -55,9 +55,6 @@ if [[ -s "$NVM_DIR/nvm.sh" ]]; then
   source "$NVM_DIR/nvm.sh"
 fi
 
-# Zellij (optional)
-# eval "$(zellij setup --generate-auto-start zsh)"
-
 # Docker completions
 fpath=("$HOME/.docker/completions" $fpath)
 
@@ -70,5 +67,3 @@ alias lt='eza --tree --color=always --group-directories-first --icons'
 alias brew='env PATH="${PATH//$(pyenv root)/shims:/}" brew'
 alias finder='open .'
 
-# Optional
-# export OLLAMA_HOST=192.168.50.136
