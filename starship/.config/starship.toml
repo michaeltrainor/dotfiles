@@ -152,17 +152,17 @@ format = '[$all_status$ahead_behind](fg:text bg:surface1) '
 [nodejs]
 symbol = "🟢"
 style = "bg:surface0"
-format = '[](fg:surface0)[ $symbol( $version) ](fg:blue bg:surface0)[](fg:surface0)'
+format = '[ $symbol( $version) ](fg:blue bg:surface0)'
 
 [c]
 symbol = "⚙️"
 style = "bg:surface0"
-format = '[](fg:surface0)[ $symbol( $version) ](fg:blue bg:surface0)[](fg:surface0)'
+format = '[ $symbol( $version) ](fg:blue bg:surface0)'
 
 [rust]
 symbol = "🦀"
 style = "bg:surface0"
-format = '[](fg:surface0)[ $symbol( $version) ](fg:peach bg:surface0)[](fg:surface0)'
+format = '[ $symbol( $version) ](fg:peach bg:surface0)'
 
 [golang]
 symbol = ""
@@ -172,22 +172,22 @@ format = '[ $symbol( $version) ](fg:blue bg:surface0)'
 [php]
 symbol = "🐘"
 style = "bg:surface0"
-format = '[](fg:surface0)[ $symbol( $version) ](fg:blue bg:surface0)[](fg:surface0)'
+format = '[ $symbol( $version) ](fg:blue bg:surface0)'
 
 [java]
 symbol = "☕"
 style = "bg:surface0"
-format = '[](fg:surface0)[ $symbol( $version) ](fg:blue bg:surface0)[](fg:surface0)'
+format = '[ $symbol( $version) ](fg:blue bg:surface0)'
 
 [kotlin]
 symbol = "🎯"
 style = "bg:surface0"
-format = '[](fg:surface0)[ $symbol( $version) ](fg:blue bg:surface0)[](fg:surface0)'
+format = '[ $symbol( $version) ](fg:blue bg:surface0)'
 
 [haskell]
 symbol = "λ"
 style = "bg:surface0"
-format = '[](fg:surface0)[ $symbol( $version) ](fg:blue bg:surface0)[](fg:surface0)'
+format = '[ $symbol( $version) ](fg:blue bg:surface0)'
 
 [python]
 symbol = "🐍"
