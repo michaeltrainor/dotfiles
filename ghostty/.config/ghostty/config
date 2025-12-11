@@ -3,11 +3,12 @@ font-family = "Hack Nerd Font Mono"
 font-size = 14
 
 # theme
-theme = "TokyoNight"
+theme = "TokyoNight Storm"
 
 # shell
 shell-integration = zsh
 shell-integration-features = true
+shell-integration-features = no-cursor
 
 # cursor
 cursor-style = "block"
@@ -15,12 +16,15 @@ cursor-style-blink = true
 
 # window
 macos-titlebar-style = tabs
+window-padding-balance = true
+window-padding-x = 20
+window-padding-y = 20
+window-width = 128
+window-height = 32
+
+# background
 background-opacity = 0.9
 background-blur-radius = 80
-window-padding-x = 5, 5
-window-padding-y = 5, 5
-window-width = 140
-window-height = 70
 
 # key-bindings
 keybind = shift+enter=text:\n
