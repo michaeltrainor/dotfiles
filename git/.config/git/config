@@ -1,9 +1,11 @@
 # ============================
-# User Configuration
+# Local Configuration (Personal Data)
 # ============================
-[user]
-	name = Michael Trainor
-	email = accounts@michaeltrainor.com
+# Include local configuration file for personal user data
+# This file is not tracked in version control
+# Create ~/.config/git/config.local with your user information
+[include]
+	path = ~/.config/git/config.local
 
 # ============================
 # Core Settings

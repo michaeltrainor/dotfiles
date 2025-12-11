@@ -1,0 +1,8 @@
+# ============================
+# macOS-Specific Ghostty Configuration
+# ============================
+# This file should be appended to the main config on macOS only
+# See: install instructions in README.md
+
+# macOS window styling
+macos-titlebar-style = tabs

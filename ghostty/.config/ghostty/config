@@ -1,30 +1,57 @@
-# fonts
+# ============================
+# Ghostty Terminal Configuration
+# ============================
+
+# ============================
+# Fonts
+# ============================
 font-family = "Hack Nerd Font Mono"
 font-size = 14
 
-# theme
+# ============================
+# Theme
+# ============================
 theme = "TokyoNight Storm"
 
-# shell
+# ============================
+# Shell Integration
+# ============================
 shell-integration = zsh
 shell-integration-features = true
 shell-integration-features = no-cursor
 
-# cursor
+# ============================
+# Cursor
+# ============================
 cursor-style = "block"
 cursor-style-blink = true
 
-# window
-macos-titlebar-style = tabs
+# ============================
+# Window Configuration
+# ============================
 window-padding-balance = true
 window-padding-x = 20
 window-padding-y = 20
 window-width = 128
 window-height = 32
 
-# background
+# ============================
+# Background
+# ============================
 background-opacity = 0.9
 background-blur-radius = 80
 
-# key-bindings
+# ============================
+# Key Bindings
+# ============================
 keybind = shift+enter=text:\n
+
+# ============================
+# Platform-Specific Configuration
+# ============================
+# Note: For macOS-specific settings like macos-titlebar-style,
+# run the following after stowing:
+#   if [[ "$OSTYPE" == "darwin"* ]]; then
+#     cat ~/.config/ghostty/config.macos >> ~/.config/ghostty/config
+#   fi
+# Or add manually: macos-titlebar-style = tabs

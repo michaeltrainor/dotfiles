@@ -1,4 +1,6 @@
-# General
+# ============================
+# macOS System Files
+# ============================
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -24,3 +26,78 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# ============================
+# Linux System Files
+# ============================
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ============================
+# Local Override Files
+# ============================
+**/*.local
+*.local
+.env.local
+
+# ============================
+# Node/NPM
+# ============================
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ============================
+# Neovim
+# ============================
+lazy-lock.json
+nvim/.config/nvim/lazy-lock.json
+
+# ============================
+# Zed Editor
+# ============================
+zed/.config/zed/conversations/
+zed/.config/zed/prompts/prompts-library-db.0.mdb/
+zed/.config/zed/settings_backup.json
+
+# ============================
+# Shell
+# ============================
+.zsh_history
+.zcompdump*
+.zsh_sessions/
+
+# ============================
+# Plugin Managers
+# ============================
+.zinit/
+.tmux/plugins/
+.local/share/nvim/
+
+# ============================
+# Temporary Files
+# ============================
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*~
+
+# ============================
+# IDE
+# ============================
+.vscode/
+.idea/
+*.code-workspace
+
+# ============================
+# Build & Log Files
+# ============================
+*.log
+.cache/

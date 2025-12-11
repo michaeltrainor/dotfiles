@@ -1,0 +1,66 @@
+#!/usr/bin/env zsh
+# ============================
+# Platform Detection Helpers
+# ============================
+# Cross-platform helper functions for detecting OS and architecture
+
+# ============================
+# OS Detection
+# ============================
+
+is_macos() {
+  [[ "$OSTYPE" == "darwin"* ]]
+}
+
+is_linux() {
+  [[ "$OSTYPE" == "linux-gnu"* ]] || [[ "$OSTYPE" == "linux"* ]]
+}
+
+is_wsl() {
+  [[ -n "$WSL_DISTRO_NAME" ]] || grep -qi microsoft /proc/version 2>/dev/null
+}
+
+# ============================
+# Architecture Detection
+# ============================
+
+is_arm() {
+  [[ $(uname -m) =~ ^(arm64|aarch64)$ ]]
+}
+
+is_x86() {
+  [[ $(uname -m) == "x86_64" ]]
+}
+
+# ============================
+# Homebrew Detection
+# ============================
+
+get_brew_prefix() {
+  # First check if brew is already in PATH
+  if command -v brew >/dev/null 2>&1; then
+    brew --prefix
+    return
+  fi
+  
+  # Otherwise detect by platform
+  if is_macos && is_arm; then
+    echo "/opt/homebrew"
+  elif is_macos && is_x86; then
+    echo "/usr/local"
+  elif is_linux || is_wsl; then
+    echo "/home/linuxbrew/.linuxbrew"
+  fi
+}
+
+has_brew() {
+  command -v brew >/dev/null 2>&1 || [[ -d "$(get_brew_prefix)" ]]
+}
+
+# ============================
+# Tool Detection
+# ============================
+
+has_tool() {
+  command -v "$1" >/dev/null 2>&1
+}
