@@ -48,10 +48,6 @@ fi
 # Starship
 eval "$(starship init zsh)"
 
-# Pyenv init
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
-
 # Lazy NVM
 if [[ -s "$NVM_DIR/nvm.sh" ]]; then
   NVM_LAZY_LOAD=true
@@ -71,9 +67,6 @@ alias la='eza -a --color=always --group-directories-first --icons'
 alias ll='eza -l --color=always --group-directories-first --icons'
 alias lla='eza -la --color=always --group-directories-first --icons'
 alias lt='eza --tree --color=always --group-directories-first --icons'
-
-# Homebrew with Pyenv workaround
-alias brew='env PATH="${PATH//$(pyenv root)/shims:/}" brew'
 
 # ============================
 # Platform-Specific Aliases

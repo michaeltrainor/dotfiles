@@ -58,9 +58,6 @@ export BAT_THEME="TwoDark"
 unset EZA_COLORS LS_COLORS
 export EZA_CONFIG_DIR="$HOME/.config/eza"
 
-# Pyenv (Python version manager)
-export PYENV_ROOT="$HOME/.pyenv"
-
 # NVM (Node version manager)
 export NVM_DIR="$HOME/.nvm"
 
