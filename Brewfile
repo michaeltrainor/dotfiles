@@ -25,7 +25,6 @@ brew "bat"                 # Modern cat replacement
 brew "bottom"              # System monitor
 brew "git-delta"           # Better git diffs
 brew "lazygit"             # Git TUI
-brew "tmux"                # Terminal multiplexer
 brew "ripgrep"             # Fast grep alternative
 brew "fd"                  # Fast find alternative
 brew "jq"                  # JSON processor
@@ -45,7 +44,6 @@ brew "gh"                  # GitHub CLI
 # ============================
 # Version Managers
 # ============================
-brew "pyenv"               # Python version manager
 brew "nvm"                 # Node version manager
 
 # ============================
