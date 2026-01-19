@@ -32,8 +32,8 @@ cursor-style-blink = true
 window-padding-balance = true
 window-padding-x = 20
 window-padding-y = 20
-window-width = 128
-window-height = 32
+window-width = 180
+window-height = 60
 
 # ============================
 # Background
@@ -49,9 +49,4 @@ keybind = shift+enter=text:\n
 # ============================
 # Platform-Specific Configuration
 # ============================
-# Note: For macOS-specific settings like macos-titlebar-style,
-# run the following after stowing:
-#   if [[ "$OSTYPE" == "darwin"* ]]; then
-#     cat ~/.config/ghostty/config.macos >> ~/.config/ghostty/config
-#   fi
-# Or add manually: macos-titlebar-style = tabs
+macos-titlebar-style = tabs
