@@ -24,6 +24,7 @@ export EDITOR="nvim"
 
 # Local binaries
 export PATH="$HOME/.local/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
 
 # Homebrew setup (cross-platform)
 if command -v brew >/dev/null 2>&1; then
