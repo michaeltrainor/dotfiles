@@ -7,7 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "assistant": {
+  "edit_predictions": {
+    "mode": "subtle"
+  },
+  "agent": {
+    "default_profile": "ask",
     "always_allow_tool_actions": true,
     "default_model": {
       "provider": "copilot_chat",
@@ -86,7 +90,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Gruvbox Material"
+    "dark": "Tokyo Night Storm"
   },
   "ui_font_size": 16
 }
